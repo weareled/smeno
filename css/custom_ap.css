@@ -1,0 +1,553 @@
+/* STYLE GENERAL */
+
+.ff-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.strong {
+  font-weight: bolder;
+}
+
+.letter-spacing {
+  letter-spacing:7px;
+}
+
+p.fs-20,
+.fs-20{
+    font-size: 20px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+button {
+  border:0px;
+}
+
+.border-radius-smeno {
+  border-radius: 17px;
+}
+
+.margin-0 {
+  margin-left: 0px;
+  margin-right:0px;
+}
+
+.padding-top-0 {
+  padding-top:0;
+}
+
+.telechargement {
+  color: #424B5A;
+  text-decoration:underline;
+}
+
+.telechargement:hover {
+  color: #12777A;
+}
+
+/* FIN STYLE GENERAL */
+
+/* AJOUT COULEUR TEXTE OOCSS*/
+.red {
+  color: #FE4819;
+}
+/* FIN AJOUT COULEUR TEXTE OOCSS*/
+
+/* AJOUT BACKGROUND OOCSS*/
+.orange-bg {
+  background-color:#F5A623;
+}
+
+.bluesky-bg {
+  background: rgba(16, 187, 239, 0.3);
+}
+
+.red-bg {
+  background: #FE4819;
+}
+/* FIN AJOUT BACKGROUND OOCSS*/
+
+/* CSS COMPLEMENTAIRE DES PAGES*/
+.tchat {
+  width:100px;
+  height:55px;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
+
+.marge-tchat {
+  padding-top: 22px!important;
+  padding-bottom: 20px!important;
+}
+
+.btn-tchat {
+    display: block;
+    padding: 0.2em;
+}
+
+.no-padding-lr {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.mentions {
+  font-size:10px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*FIL D'ARIANE */
+.breadcrumb {
+ background-color: transparent;
+ padding-left: 0px;
+}
+
+.breadcrumb-smeno {
+   position: relative;
+   background-color: transparent;
+}
+
+nav.breadcrumb-smeno a {
+   display: inline;
+}
+
+.breadcrumb-item a {
+ color:black;
+}
+
+.breadcrumb-item.active {
+ color:#F5A623;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+   color: black;
+   content: ">";
+}
+
+/* HEADER */
+ .sticky {
+   position:sticky;
+   top:0px;
+ }
+
+ /* ESPACE PREVENTION*/
+ .espace-prevention {
+   background-color: #A61F7D;
+ }
+
+ .espace-prevention:hover {
+   background-color: #F5A623;
+ }
+
+.espace-prevention a {
+  display:block;
+  color:white;
+  text-decoration: none;
+}
+
+.espace-prevention-absolute {
+  position:absolute;
+  top:0px;
+  right:-15px;
+}
+
+/* PAGE QUI-SOMMES-NOUS ? */
+
+.categorie a {
+  font-size: 10px;
+}
+
+.btn-decouvrir {
+  border-radius:17px;
+  font-size: 15px;
+}
+
+.btn-decouvrir a {
+  color:white;
+}
+
+.btn-decouvrir:hover {
+  background-color: #12777A;
+}
+
+.btn-decouvrir-site {
+  color:white;
+  text-decoration: underline;
+}
+
+.btn-decouvrir-site:after {
+  content:url(../img/arrow-right.png);
+  position:relative;
+  top:6px;
+  width:25px;
+  height:20px;
+}
+
+/* PAGE PACK SANTE */
+.header-pack-sante {
+  background-image: url("../img/header-pack-sante-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn-lire-la-suite {
+  color:white;
+  text-decoration: underline;
+}
+
+.btn-lire-la-suite:after {
+  content:url(../img/arrow-right.png);
+  position:relative;
+  top:6px;
+  width:25px;
+  height:20px;
+}
+
+/* PAGE MUTUELLE */
+.header-mutuelle {
+  background-image: url("../img/header-mutuelle-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* PAGE DETAIL MUTUELLE */
+
+.header-detail-mutuelle {
+  box-shadow: -600px 0px 0px #10BBEF ;
+}
+
+.header-orange {
+  box-shadow: -600px 0px 0px #F5A623 ;
+}
+
+.header-blue {
+  box-shadow: -600px 0px 0px #12777A ;
+}
+
+/* COMPARATEUR */
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.nav-tabs .nav-link {
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: rgba(16, 187, 239, 0.3);
+    color:white;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: #10BBEF;
+}
+
+.nav-link.active:after {
+    border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-top-color: #10BBEF;
+      border-width: 17px;
+      margin-left: -50px;
+      top: 70px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px;
+    font-size:20px;
+    padding: 20px;
+}
+
+.list-check {
+    padding-left: 0px;
+}
+
+li.check {
+  list-style-type: none;
+  padding-bottom: 15px;
+  padding-left: 55px;
+  text-indent: -30px;
+}
+
+li.check::before {
+  content: url(../img/check.png);
+  display: inline-block;
+  padding-right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* PAGE MUTUELLE*/
+
+.pastille {
+  border-radius: 50%;
+  height: 192px;
+  max-width: 192px;
+  width: 100%;
+  padding-top: 56px!important;
+}
+
+.a-partir {
+  font-size:17px;
+}
+
+.prix {
+  font-size:30px;
+  line-height: 25px;
+}
+
+
+.titre-mutuelle:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #10BBEF;
+  border-width: 25px;
+  margin-left: -8%;
+  top: 139px;
+  }
+
+.titre-pack-sante:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #18BD93;
+  border-width: 25px;
+  margin-left: -8%;
+  top: 139px;
+  }
+
+.fa-angle-right{
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+  color: #424B5A;
+}
+
+.fa-angle-right.open{
+  transform: rotate(90deg);
+  transition: transform 0.2s linear;
+}
+
+/* PAGE AGENCE */
+.adresse:before {
+  content: url(../img/adresse.png);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: -20%;
+}
+
+.tel:before {
+  content: url(../img/tel.png);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: -20%;
+}
+
+/* PAGE ASSURANCE */
+.titre-assurance:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #FE4819;
+  border-width: 25px;
+  margin-left: -8%;
+  top: 176px;
+  }
+
+.header-assurance {
+    box-shadow: -600px 0px 0px #FE4819;
+}
+
+.horaires:before {
+  content: url(../img/horaires.png);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: -20%;
+}
+
+.itineraires a {
+  color:#12777A;
+  font-weight: bolder;
+  text-decoration:underline;
+}
+
+.faq {
+  border-radius: 17px;
+}
+
+.faq:hover {
+  background-color:#F5A623;
+}
+
+.faq a {
+  color:#12777A;
+}
+
+.faq a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+.lien-faq {
+    color: #F5A623;
+}
+
+.btn-outline-smeno {
+  color: #12777A;
+  border-color: #343a40;
+  border-radius:0px;
+}
+
+.btn-outline-smeno:hover {
+  background-color: #12777A;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    color: #12777A;
+    background-color: white;
+    border-color: #4e555b;
+}
+
+.btn-secondary:focus {
+    box-shadow: 0px;
+}
+
+/* PAGE FAQ - CONTACT - AGENCES - DEVIS - REMERCIEMENT */
+.header-orange {
+  box-shadow: -600px 0px 0px #F5A623 ;
+}
+
+.btn-faq {
+  border-radius:17px;
+}
+
+.btn-faq:hover {
+  border-radius:#12777A;
+}
+
+.btn-faq a {
+  text-decoration: none;
+}
+
+input.newsletter {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+input.newsletter::placeholder {
+    color:white;
+}
+
+    /*FORMULAIRE*/
+.form-control {
+  border-radius: 0px;
+}
+
+/* FOOTER */
+.lien-footer a {
+  color: #424B5A;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.copyright{
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 375px) {
+  .header-pack-sante {
+    background-image: url("../img/header-pack-sante-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .margin-title {
+    margin-top: 12rem;
+  }
+
+  .espace-prevention-absolute {
+    display:none;
+  }
+
+  .scroll {
+    display:none;
+  }
+
+  .tchat {
+    display: none;
+  }
+
+  /* CSS MOBILE TABS COMPARATEUR*/
+  .nav-pills .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-link.active:after {
+    margin-left: -40px;
+    top: 60px;
+  }
+
+  /*PAGE MUTUELLE*/
+  .header-detail-mutuelle, .header-orange, .header-assurance {
+    display: none;
+  }
+
+}
+
+/* BOTTOM BAR*/
+.btn-bottom-bar{
+  display:block;
+  padding:0.75em;
+  background-color:#F5A623;
+}
+
+.btn-bottom-bar:hover {
+  background-color:#12777A;
+}

@@ -1,0 +1,483 @@
+/*TYPO*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Fredoka One', cursive;
+}
+
+h1,
+.h1-size {
+    font-size: 30px;
+}
+
+h2,
+.h2-size {
+    font-size: 25px;
+}
+
+h3,
+.h3-size,
+h4,
+.h4-size {
+    font-size: 16px;
+}
+
+p,
+span,
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #424B5A;
+}
+
+p.fs-15,
+.fs-15{
+    font-size: 15px;
+}
+p.fs-18,
+.fs-18{
+    font-size: 18px;
+}
+
+
+.ff-fredoka{
+    font-family: 'Fredoka One', cursive;
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+
+
+/*BORDER*/
+.grey-border{
+    border: 1px solid #424B5A;
+}
+.grey-border-bottom{
+    border-bottom: 1px solid #424B5A;
+}
+.no-border{
+    border: none;
+}
+.arrondi-15{
+    border-radius: 15px;
+}
+.arrondi-100{
+    border-radius: 100%;
+}
+
+
+/***
+*** COULEURS ***
+***/
+/*BACKGROUND*/
+.green-bg{
+    background-color: #18BD93;
+}
+.lightgreen-bg{
+    background-color: rgba(24, 189, 147, 0.5);
+}
+.blue-bg{
+    background-color: #12777A;
+}
+.lightblue-bg{
+    background-color: #0BBBEF;
+}
+.yellow-bg{
+    background-color: #F5A623;
+}
+.grey-bg{
+    background-color: #424B5A;
+}
+.purple-bg{
+    background-color: #A71680;
+}
+
+.white-bg{
+    background-color: #ffffff;
+}
+
+/*COULEURS*/
+.green{
+    color: #18BD93;
+}
+.blue{
+    color: #12777A;
+}
+.lightblue{
+    color: #0BBBEF;
+}
+.yellow{
+    color: #F5A623;
+}
+.grey{
+    color: #424B5A;
+}
+.purple{
+    color: #A71680;
+}
+.white{
+    color: #fff;
+}
+
+
+/*FULL-WIDTH BLOCK*/
+.green-bg.full-width{
+    box-shadow:  500px 0px 0px #18BD93, -600px 0 0px #18BD93;
+}
+.lightgreen-bg.full-width{
+    box-shadow: 500px 0px 0px rgba(24, 189, 147, 0.5), -600px 0 0px rgba(24, 189, 147, 0.5);
+}
+.blue-bg.full-width{
+    box-shadow:  500px 0px 0px #12777A, -600px 0 0px #12777A;
+}
+.lightblue-bg.full-width{
+    box-shadow: 500px 0px 0px #0BBBEF, -600px 0 0px #0BBBEF;
+}
+.yellow-bg.full-width{
+    box-shadow:  500px 0px 0px #F5A623, -600px 0 0px #F5A623;
+}
+.grey-bg.full-width{
+    box-shadow:  500px 0px 0px #424B5A, -600px 0 0px #424B5A;
+}
+.purple-bg.full-width{
+    box-shadow:  500px 0px 0px #A71680, -600px 0 0px #A71680;
+}
+
+/*OVERLAY HEADER*/
+.overlay{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.06%, #000000 100%);
+}
+
+
+/***
+*** BOUTONS ***
+***/
+.btn{
+    color:#fff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-size:12px;
+}
+.btn:hover{
+    color: #fff;
+}
+
+.btn-max-w{
+    display: inline-block;
+    max-width: 240px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.underline:hover{
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+}
+
+
+/****
+*** MARGE & PADDING ***
+****/
+
+.py-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/***
+*** CONTAINER ***
+***/
+/*GENERAL*/
+@media screen and (min-width:1200px){
+    .container-fluid{
+        padding: 60px 0;
+    }
+}
+
+
+/***
+**** NAVIGATION DESKTOP ****
+***/
+.menu-left{
+    background-color: #12777A;
+    z-index: 999;
+}
+#main-menu{
+    padding:0 30px 0 45px;
+}
+
+
+/***
+*** NAVIGATION MOBILE ***
+***/
+.nav-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: -100%;
+    transition: position .3s;
+    z-index:99;
+}
+.nav-wrapper.show-menu {
+    animation-name: toggle;
+    animation-duration:.3s ;
+    animation-fill-mode: forwards;
+}
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #12777A;
+}
+nav .nav-toggle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25em 0.9375em;
+    color: #fff;
+    z-index: 100;
+    text-align: right;
+}
+nav .nav-toggle.back-visible .nav-back {
+    opacity: 1;
+}
+nav .nav-back {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+nav .nav-back:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    width: 20px;
+    height: 20px;
+    border: 3px solid currentcolor;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotateZ(135deg);
+    transition: transform 0.3s;
+    transform-origin: 100%;
+    color: #fff;
+}
+nav a {
+    display: block;
+}
+nav ul {
+    list-style: none;
+    padding: 100px 0 0;
+    transition: transform 0.3s;
+    background-color: #12777A;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+nav ul ul {
+    display: none;
+    left: 100%;
+}
+nav li.nav-dropdown-open ul {
+    display: block;
+}
+.footer-menu{
+    padding: 20px 15px;
+}
+.footer-menu-content{
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.icon-menu-mob{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    max-width: 40px;
+}
+.icon-menu-mob.search{
+    left: 80px;
+}
+.icon-menu-rs{
+    max-height: 20px;
+    margin: 25px 10px;
+}
+@keyframes toggle{
+    from{
+        left: -100%;
+    }
+    to{
+        left:0%;
+    }
+}
+
+
+/***
+*** NAVIGATION ***
+***/
+.list-group-item,
+.nav-subtitle{
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 34px;
+}
+.list-group-item.child{
+    font-size:16px;
+    line-height: 20px;
+    padding: 10px 15px;
+    text-transform: unset;
+}
+.list-group-item:hover{
+    text-decoration: none;
+    color: white;
+}
+.nav-subtitle{
+    padding-top: 50px;
+    text-transform: unset;
+}
+.nav-title,
+.logo-menu-mob{
+    padding: 15px;
+    text-transform: uppercase;
+    color: #F5A623;
+    font-size: 25px;
+    font-family: 'Fredoka One', sans-serif;
+    z-index: 9;
+}
+@media screen and (min-width:1200px){
+    .list-group-item{
+        font-size: 12px;
+        padding: 10px 0;
+        letter-spacing: 2px;
+    }
+    .list-group-item.child{
+        font-size: 11px;
+        padding: 10px 0;
+    }
+    .list-group-item:hover{
+        color: #F5A623;
+    }
+    .nav-subtitle{
+        font-size: 13px;
+        padding: 0;
+    }
+    .collapse.show{
+        border-bottom:1px solid white;
+        border-top: 1px solid white;
+    }
+}
+
+
+/***
+*** BURGER ICON ****
+***/
+.js-nav-toggle {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 43px;
+    height: 40px;
+    margin: 15px 0 0 15px;
+    display: block;
+    float: left;
+    padding: 0;
+    z-index: 2;
+}
+.show-menu .js-nav-toggle{
+    right: 15px;
+}
+.js-nav-toggle span {
+    position: relative;
+    background-color: #12777A;
+    height: 2px;
+    display: block;
+    width: 22px;
+    margin: 17px auto 0;
+    transition: all 0.4s;
+    transition-delay: 0.3s;
+}
+.js-nav-toggle span:before, .js-nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 0;
+    left: 1px;
+    top: 50%;
+    margin-top: -7px;
+    transition: all 0.3s 0.3s;
+}
+.js-nav-toggle span:before {
+    box-shadow: 0 14px 0 1px #12777A;
+}
+.js-nav-toggle span:after {
+    box-shadow: 0 0 0 1px #12777A;
+}
+.show-menu .js-nav-toggle span {
+    background-color: transparent;
+}
+.show-menu .js-nav-toggle span:before {
+    transform: rotate(-45deg);
+}
+.show-menu .js-nav-toggle span:after {
+    transform: rotate(45deg);
+}
+.show-menu .js-nav-toggle span:before, .show-menu .js-nav-toggle span:after {
+    margin-top: 0;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+
+/*HOME*/
+.header .carousel-item{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+.scroll-bottom{
+    margin: 0 auto;
+    position: absolute;
+    bottom: -150px;
+    left:50%;
+}
